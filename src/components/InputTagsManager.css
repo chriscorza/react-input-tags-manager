@@ -1,0 +1,93 @@
+.input-tags-container {
+    border-bottom: 1px solid #dbdcdbd9;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+.input-tags-container.focus {
+    border-bottom: 2px solid #aeeaae;
+}
+.input-tag {
+    border: none !important;
+    padding: 10px;
+    display: block;
+    width: 100%;
+    
+}
+
+.input-tag:focus {
+    border: none !important;
+    outline: none !important;
+}
+
+.tag-container {
+    display: block;
+}
+
+.tag-pill{
+    display: inline;
+    background-color: rgb(200, 140, 140);
+    color: white;
+    border-radius: 5px;
+    margin: 0 5px;
+}
+
+.tag-pill * {
+    display: inline;
+    
+}
+
+.tag-remove-button{
+    margin-left: 3px;
+    background: none !important;
+    border: none !important;
+    padding: 1px;
+    cursor: pointer;
+    color: wheat;
+}
+
+.close-icon{
+    max-height: 16px;
+    max-width: 16px;
+}
+.text-side {
+    padding: 10px;
+}
+.button-side {
+    cursor: pointer;
+    border-left: 1px solid rgb(255, 255, 255);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 0 10px;
+}
+
+.button-side:hover {
+    cursor: pointer;
+    background-color: rgb(204, 121, 121);
+}
+
+* {
+    font-size: 30px !important;
+}
+
+.autocomplete-items {
+    position: absolute;
+    border: 1px solid #d4d4d4;
+    border-bottom: none;
+    border-top: none;
+    z-index: 99;
+    /*position the autocomplete items to be the same width as the container:*/
+    top: 110%;
+    left: 0;
+    right: 0;
+  }
+  .autocomplete-items div {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #fff;
+    border-bottom: 1px solid #d4d4d4;
+  }
+  .autocomplete-items div:hover {
+    /*when hovering an item:*/
+    background-color: #e9e9e9;
+  }
